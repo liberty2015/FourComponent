@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FourComponent</string>
+
+    <string name="activity_demo">Activity Demo</string>
+    <string name="broadcastReceiver_demo">BroadcastReceiver Demo</string>
+    <string name="service_demo">Service Demo</string>
+    <string name="contentProvider_demo">ContentProvider Demo</string>
+</resources>
