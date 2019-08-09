@@ -9,8 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.Abnormal2Activity"
-            android:configChanges="orientation|screenSize"></activity>
+        <activity android:name=".activity.OtherActivity"></activity>
+        <activity
+            android:name=".activity.StandardActivity"
+            android:launchMode="standard" />
+        <activity
+            android:name=".activity.SingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".activity.SingleTaskActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.SingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.Abnormal2Activity"
+            android:configChanges="orientation|screenSize" />
         <activity android:name=".activity.AbnormalActivity" />
         <activity android:name=".activity.NextActivity" />
         <activity android:name=".service.ServiceDemoActivity" />

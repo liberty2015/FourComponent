@@ -1,7 +1,7 @@
 package com.liberty.myapplication.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,7 +11,7 @@ import com.liberty.myapplication.R;
 
 import static com.liberty.myapplication.MainActivity.GLOBAL_TAG;
 
-public class ActivityDemoActivity extends AppCompatActivity {
+public class ActivityDemoActivity extends BaseActivity {
 
     private static final String TAG = ActivityDemoActivity.class.getSimpleName();
 
@@ -34,6 +34,29 @@ public class ActivityDemoActivity extends AppCompatActivity {
 
     public void openAbnormalState2Activity(View view){
         startActivity(new Intent(this, Abnormal2Activity.class));
+    }
+
+    public void openStandardActivity(View view){
+        startActivity(new Intent(this,StandardActivity.class));
+    }
+
+    public void openSingleTopActivity(View view){
+        startActivity(new Intent(this,SingleTopActivity.class));
+    }
+
+    public void openSingleTaskActivity(View view){
+        startActivity(new Intent(this,SingleTaskActivity.class));
+    }
+
+    public void openSingleInstanceActivity(View view){
+        startActivity(new Intent(this,SingleInstanceActivity.class));
+    }
+
+    public void openActivityWithFlags(View view){
+        Intent intent = new Intent();
+        intent.setClass(this,StandardActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     @Override
